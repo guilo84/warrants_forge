@@ -1,0 +1,26 @@
+# 1. Core Server Executables & Caches
+paper.jar
+cache/
+libraries/
+versions/
+
+# 2. Runtime State & Logs
+logs/
+crash-reports/
+*.log.gz
+usercache.json
+banned-ips.json
+banned-players.json
+
+# 3. Live World Data 
+# (Note: We ignore this now during prototyping. Later, we will use WorldEdit 
+# to export your arena as a .schem file, which WE WILL track in Git).
+world/
+world_nether/
+world_the_end/
+
+# 4. Plugins
+# We want to track the configuration folders, but NOT the plugin .jar files
+# or the SQLite databases plugins generate (like CoreProtect logs).
+plugins/*.jar
+plugins/*/*.db
